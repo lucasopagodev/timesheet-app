@@ -56,7 +56,15 @@ const WORK_SCHEDULES: WorkSchedule[] = [
     afternoonEntry: { hour: 14, minute: 0 },
     afternoonExit: { hour: 18, minute: 0 },
   },
-]
+  {
+    id: "late-afternoon",
+    name: "Tardio (9:30h - 13h, 14h - 18:30h)",
+    morningEntry: { hour: 9, minute: 30 },
+    morningExit: { hour: 13, minute: 0 },
+    afternoonEntry: { hour: 14, minute: 0 },
+    afternoonExit: { hour: 18, minute: 30 },
+  },
+];
 
 type TimesheetEntry = {
   date: Date
